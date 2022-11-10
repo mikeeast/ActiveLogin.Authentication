@@ -1,0 +1,576 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class GrandIdHandler&lt;TOptions, TGetSessionResponse&gt;
+   | Active Login </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class GrandIdHandler&lt;TOptions, TGetSessionResponse&gt;
+   | Active Login ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2">
+  
+  
+  <h1 id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2" class="text-break">Class GrandIdHandler&lt;TOptions, TGetSessionResponse&gt;
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler</span>&lt;TOptions&gt;</div>
+    <div class="level2"><span class="xref">Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler</span>&lt;TOptions&gt;</div>
+    <div class="level3"><span class="xref">GrandIdHandler&lt;TOptions, TGetSessionResponse&gt;</span></div>
+      <div class="level4"><a class="xref" href="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdBankIdHandler.html">GrandIdBankIdHandler</a></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><span class="xref">Microsoft.AspNetCore.Authentication.IAuthenticationRequestHandler</span></div>
+    <div><span class="xref">Microsoft.AspNetCore.Authentication.IAuthenticationHandler</span></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler&lt;TOptions&gt;.CreateEventsAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler&lt;TOptions&gt;.ShouldHandleRequestAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler&lt;TOptions&gt;.HandleRequestAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler&lt;TOptions&gt;.HandleAuthenticateAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler&lt;TOptions&gt;.HandleForbiddenAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler&lt;TOptions&gt;.GenerateCorrelationId(Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler&lt;TOptions&gt;.ValidateCorrelationId(Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler&lt;TOptions&gt;.HandleAccessDeniedErrorAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler&lt;TOptions&gt;.SignInScheme</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler&lt;TOptions&gt;.Events</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.InitializeAsync(Microsoft.AspNetCore.Authentication.AuthenticationScheme, Microsoft.AspNetCore.Http.HttpContext)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.InitializeEventsAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.InitializeHandlerAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.BuildRedirectUri(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.ResolveTarget(System.String)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.AuthenticateAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.HandleAuthenticateOnceAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.HandleAuthenticateOnceSafeAsync()</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.ChallengeAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.ForbidAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.Scheme</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.Options</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.Context</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.Request</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.Response</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.OriginalPath</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.OriginalPathBase</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.Logger</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.UrlEncoder</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.Clock</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.OptionsMonitor</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.ClaimsIssuer</span>
+    </div>
+    <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.CurrentUri</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="ActiveLogin.Authentication.GrandId.AspNetCore.html">ActiveLogin.Authentication.GrandId.AspNetCore</a></h6>
+  <h6><strong>Assembly</strong>: ActiveLogin.Authentication.GrandId.AspNetCore.dll</h6>
+  <h5 id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class GrandIdHandler&lt;TOptions, TGetSessionResponse&gt; : RemoteAuthenticationHandler&lt;TOptions&gt;, IAuthenticationRequestHandler, IAuthenticationHandler where TOptions : GrandIdOptions, new()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">TOptions</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="parametername">TGetSessionResponse</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ActiveLogin/ActiveLogin.Authentication/new/main/docs/apiSpec/new?filename=ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2__ctor_Microsoft_Extensions_Options_IOptionsMonitor__0__Microsoft_Extensions_Logging_ILoggerFactory_System_Text_Encodings_Web_UrlEncoder_Microsoft_AspNetCore_Authentication_ISystemClock_.md&amp;value=---%0Auid%3A%20ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler%602.%23ctor(Microsoft.Extensions.Options.IOptionsMonitor%7B%600%7D%2CMicrosoft.Extensions.Logging.ILoggerFactory%2CSystem.Text.Encodings.Web.UrlEncoder%2CMicrosoft.AspNetCore.Authentication.ISystemClock)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mikeeast/ActiveLogin.Authentication/blob/main/src/ActiveLogin.Authentication.GrandId.AspNetCore/GrandIdHandler.cs/#L18">View Source</a>
+  </span>
+  <a id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2__ctor_" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2.#ctor*"></a>
+  <h4 id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2__ctor_Microsoft_Extensions_Options_IOptionsMonitor__0__Microsoft_Extensions_Logging_ILoggerFactory_System_Text_Encodings_Web_UrlEncoder_Microsoft_AspNetCore_Authentication_ISystemClock_" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2.#ctor(Microsoft.Extensions.Options.IOptionsMonitor{`0},Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock)">GrandIdHandler(IOptionsMonitor&lt;TOptions&gt;, ILoggerFactory, UrlEncoder, ISystemClock)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected GrandIdHandler(IOptionsMonitor&lt;TOptions&gt; options, ILoggerFactory loggerFactory, UrlEncoder encoder, ISystemClock clock)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Options.IOptionsMonitor</span>&lt;TOptions&gt;</td>
+        <td><span class="parametername">options</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILoggerFactory</span></td>
+        <td><span class="parametername">loggerFactory</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Text.Encodings.Web.UrlEncoder</span></td>
+        <td><span class="parametername">encoder</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Authentication.ISystemClock</span></td>
+        <td><span class="parametername">clock</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ActiveLogin/ActiveLogin.Authentication/new/main/docs/apiSpec/new?filename=ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_GetClaims__1_.md&amp;value=---%0Auid%3A%20ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler%602.GetClaims(%601)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mikeeast/ActiveLogin.Authentication/blob/main/src/ActiveLogin.Authentication.GrandId.AspNetCore/GrandIdHandler.cs/#L109">View Source</a>
+  </span>
+  <a id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_GetClaims_" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2.GetClaims*"></a>
+  <h4 id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_GetClaims__1_" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2.GetClaims(`1)">GetClaims(TGetSessionResponse)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract IEnumerable&lt;Claim&gt; GetClaims(TGetSessionResponse loginResult)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TGetSessionResponse</span></td>
+        <td><span class="parametername">loginResult</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.IEnumerable</span>&lt;<span class="xref">System.Security.Claims.Claim</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ActiveLogin/ActiveLogin.Authentication/new/main/docs/apiSpec/new?filename=ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_GetRedirectUrlAsync_Microsoft_AspNetCore_Authentication_AuthenticationProperties_System_String_.md&amp;value=---%0Auid%3A%20ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler%602.GetRedirectUrlAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mikeeast/ActiveLogin.Authentication/blob/main/src/ActiveLogin.Authentication.GrandId.AspNetCore/GrandIdHandler.cs/#L121">View Source</a>
+  </span>
+  <a id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_GetRedirectUrlAsync_" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2.GetRedirectUrlAsync*"></a>
+  <h4 id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_GetRedirectUrlAsync_Microsoft_AspNetCore_Authentication_AuthenticationProperties_System_String_" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2.GetRedirectUrlAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties,System.String)">GetRedirectUrlAsync(AuthenticationProperties, String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract Task&lt;string&gt; GetRedirectUrlAsync(AuthenticationProperties properties, string absoluteReturnUrl)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationProperties</span></td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">absoluteReturnUrl</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">System.String</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ActiveLogin/ActiveLogin.Authentication/new/main/docs/apiSpec/new?filename=ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_GetSessionResponseAsync_System_String_.md&amp;value=---%0Auid%3A%20ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler%602.GetSessionResponseAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mikeeast/ActiveLogin.Authentication/blob/main/src/ActiveLogin.Authentication.GrandId.AspNetCore/GrandIdHandler.cs/#L59">View Source</a>
+  </span>
+  <a id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_GetSessionResponseAsync_" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2.GetSessionResponseAsync*"></a>
+  <h4 id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_GetSessionResponseAsync_System_String_" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2.GetSessionResponseAsync(System.String)">GetSessionResponseAsync(String)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract Task&lt;TGetSessionResponse&gt; GetSessionResponseAsync(string sessionId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">sessionId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;TGetSessionResponse&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ActiveLogin/ActiveLogin.Authentication/new/main/docs/apiSpec/new?filename=ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_HandleChallengeAsync_Microsoft_AspNetCore_Authentication_AuthenticationProperties_.md&amp;value=---%0Auid%3A%20ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler%602.HandleChallengeAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mikeeast/ActiveLogin.Authentication/blob/main/src/ActiveLogin.Authentication.GrandId.AspNetCore/GrandIdHandler.cs/#L111">View Source</a>
+  </span>
+  <a id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_HandleChallengeAsync_" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2.HandleChallengeAsync*"></a>
+  <h4 id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_HandleChallengeAsync_Microsoft_AspNetCore_Authentication_AuthenticationProperties_" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2.HandleChallengeAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)">HandleChallengeAsync(AuthenticationProperties)</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override async Task HandleChallengeAsync(AuthenticationProperties properties)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationProperties</span></td>
+        <td><span class="parametername">properties</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.AspNetCore.Authentication.AuthenticationHandler&lt;TOptions&gt;.HandleChallengeAsync(Microsoft.AspNetCore.Authentication.AuthenticationProperties)</span></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/ActiveLogin/ActiveLogin.Authentication/new/main/docs/apiSpec/new?filename=ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_HandleRemoteAuthenticateAsync.md&amp;value=---%0Auid%3A%20ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler%602.HandleRemoteAuthenticateAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/mikeeast/ActiveLogin.Authentication/blob/main/src/ActiveLogin.Authentication.GrandId.AspNetCore/GrandIdHandler.cs/#L28">View Source</a>
+  </span>
+  <a id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_HandleRemoteAuthenticateAsync_" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2.HandleRemoteAuthenticateAsync*"></a>
+  <h4 id="ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2_HandleRemoteAuthenticateAsync" data-uid="ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler`2.HandleRemoteAuthenticateAsync">HandleRemoteAuthenticateAsync()</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected override async Task&lt;HandleRequestResult&gt; HandleRemoteAuthenticateAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span>&lt;<span class="xref">Microsoft.AspNetCore.Authentication.HandleRequestResult</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><span class="xref">Microsoft.AspNetCore.Authentication.RemoteAuthenticationHandler&lt;TOptions&gt;.HandleRemoteAuthenticateAsync()</span></div>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.IAuthenticationRequestHandler</span>
+  </div>
+  <div>
+      <span class="xref">Microsoft.AspNetCore.Authentication.IAuthenticationHandler</span>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ActiveLogin/ActiveLogin.Authentication/new/main/docs/apiSpec/new?filename=ActiveLogin_Authentication_GrandId_AspNetCore_GrandIdHandler_2.md&amp;value=---%0Auid%3A%20ActiveLogin.Authentication.GrandId.AspNetCore.GrandIdHandler%602%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/mikeeast/ActiveLogin.Authentication/blob/main/src/ActiveLogin.Authentication.GrandId.AspNetCore/GrandIdHandler.cs/#L16" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Active Solution
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

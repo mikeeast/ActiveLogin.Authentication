@@ -1,0 +1,364 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>ActiveLogin.Authentication.GrandId | Active Login </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="ActiveLogin.Authentication.GrandId | Active Login ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="..//images/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    <meta property="docfx:newtab" content="true">
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="activeloginauthenticationgrandid">ActiveLogin.Authentication.GrandId</h1>
+
+<p><em><strong>DISCLAIMER:</strong></em> The packages in ActiveLogin for Svensk E-identitet / GrandID are not beeing worked on anymore, and are therefore not supported. See this <a href="https://github.com/ActiveLogin/ActiveLogin.Authentication/discussions/323">announcement</a> for more info. The documentation below is provided as is and reflects the state for the 4.0.0 release of the GrandId packages.</p>
+<h2 id="table-of-contents">Table of contents</h2>
+<ul>
+<li><a href="#nuget-packages">NuGet Packages</a>
+<ul>
+<li><a href="#activeloginauthenticationgrandid">ActiveLogin.Authentication.GrandId.*</a></li>
+</ul>
+</li>
+<li><a href="#getting-started">Getting started</a>
+<ul>
+<li><a href="#1-preparation">1. Preparation</a></li>
+<li><a href="#2-install-the-nuget-package">2. Install the NuGet package</a></li>
+<li><a href="#3-prepare-your-project">3. Prepare your project</a></li>
+<li><a href="#4-get-started-in-development">4. Get started in development</a></li>
+<li><a href="#5-use-test-or-production-environments">5. Use test or production environments</a></li>
+</ul>
+</li>
+<li><a href="#samples">Samples</a>
+<ul>
+<li><a href="#simulated-environment">Simulated environment</a></li>
+<li><a href="#simulated-environment-with-no-config">Simulated environment with no config</a></li>
+<li><a href="#simulated-environment-with-custom-person-info">Simulated environment with custom person info</a></li>
+<li><a href="#production-environment">Production environment</a></li>
+<li><a href="#test-environment">Test environment</a></li>
+<li><a href="#using-schemes-for-same-device-and-other-device">Using schemes for same device and other device</a></li>
+<li><a href="#using-schemas-for-choose-device">Using schemas for choose device</a></li>
+<li><a href="#customizing-schemas">Customizing schemas</a></li>
+<li><a href="#customizing-grandid">Customizing GrandID</a></li>
+<li><a href="#api-only">Api only</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="nuget-packages">NuGet Packages</h2>
+<h3 id="activeloginauthenticationgrandid-1">ActiveLogin.Authentication.GrandId.*</h3>
+<p>Packages for GrandID (Svensk E-identitet).</p>
+<table>
+<thead>
+<tr>
+<th>Project</th>
+<th>Description</th>
+<th>NuGet</th>
+<th>Downloads</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/ActiveLogin/ActiveLogin.Authentication/tree/main/src/ActiveLogin.Authentication.GrandId.Api">GrandId.Api</a></td>
+<td>API client for the GrandID (Svensk E-identitet) REST API.</td>
+<td><a href="https://www.nuget.org/packages/ActiveLogin.Authentication.GrandId.Api/"><img src="https://img.shields.io/nuget/vpre/ActiveLogin.Authentication.GrandId.Api.svg" alt="NuGet"></a></td>
+<td><a href="https://www.nuget.org/packages/ActiveLogin.Authentication.GrandId.Api/"><img src="https://img.shields.io/nuget/dt/ActiveLogin.Authentication.GrandId.Api.svg" alt="NuGet (Pre)"></a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/ActiveLogin/ActiveLogin.Authentication/tree/main/src/ActiveLogin.Authentication.GrandId.AspNetCore">GrandId.AspNetCore</a></td>
+<td>ASP.NET authentication module for GrandID (Svensk E-identitet).</td>
+<td><a href="https://www.nuget.org/packages/ActiveLogin.Authentication.GrandId.AspNetCore/"><img src="https://img.shields.io/nuget/vpre/ActiveLogin.Authentication.GrandId.AspNetCore.svg" alt="NuGet"></a></td>
+<td><a href="https://www.nuget.org/packages/ActiveLogin.Authentication.GrandId.AspNetCore/"><img src="https://img.shields.io/nuget/dt/ActiveLogin.Authentication.GrandId.AspNetCore.svg" alt="NuGet (Pre)"></a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="getting-started">Getting started</h2>
+<p>GrandID (Svensk E-identitet) uses a predefined UI and does not support all functionalities of the BankID API, but is really easy to get started with and does not require any certificates.</p>
+<h3 id="1-preparation">1. Preparation</h3>
+<p>Active Login is designed to make it very easy to get started with GrandID (Svensk E-identitet), but in the end you are resonsible for making sure that you are complient with the technical guidelines and/or legal agreements.</p>
+<p>Therefore, before you start using Active Login, please read the documentation relevant to your needs. This will also make sure you understand the concepts better.</p>
+<ol>
+<li>Read through the <a href="https://docs.grandid.com/">GrandID documentation</a>. This ensures you have a basic understanding of the terminology as well as how the flow and security works.</li>
+<li><a href="https://e-identitet.se/tjanster/inloggningsmetoder/bankid/">Get in touch with Svensk E-identitet</a> to receive keys, you need these:
+<ul>
+<li><code>ApiKey</code></li>
+<li><code>BankIdServiceKey</code> (BankID) <em>Note:</em> ActiveLogin is built for the (at the time of writing this) latest version of GrandID where only one key is used. Please get in touch with Svensk E-identitet if you need to upgrade to this new version.</li>
+</ul>
+</li>
+<li>Add them to your config, for example:</li>
+</ol>
+<pre><code class="lang-json">{
+  &quot;ActiveLogin:GrandId:ApiKey&quot;: &quot;TODO-ADD-YOUR-VALUE&quot;,
+  &quot;ActiveLogin:GrandId:BankIdServiceKey&quot;: &quot;TODO-ADD-YOUR-VALUE&quot;
+}
+</code></pre>
+<h3 id="2-install-the-nuget-package">2. Install the NuGet package</h3>
+<p>ActiveLogin.Authentication is distributed as <a href="https://www.nuget.org/profiles/ActiveLogin">packages on NuGet</a>, install using the tool of your choice, for example <em>dotnet cli</em>.</p>
+<pre><code class="lang-console">dotnet add package ActiveLogin.Authentication.GrandId.AspNetCore
+</code></pre>
+<h3 id="3-prepare-your-project">3. Prepare your project</h3>
+<p>It is expected that you have a basic understanding of how <a href="https://docs.microsoft.com/en-us/aspnet/core/">ASP.NET Core</a>, <a href="https://docs.microsoft.com/en-us/aspnet/core/mvc/overview">ASP.NET Core MVC</a> and <a href="https://docs.microsoft.com/en-us/aspnet/core/security/authentication/identity">ASP.NET Core Authentication</a> works before getting started.</p>
+<p>Also, you are expected to have read up on the <a href="https://www.bankid.com/utvecklare/guider">latest information from BankID</a>. Active Login will help you to implement BankID according to guidelines, but in the end, it's your responsiblity to follow the BankID agreement.</p>
+<p>The authentication modules for GrandID are registered in your <code>Program.cs</code>. Depending on your setup, you will probably have to configure challenge and callbacks in <code>AccountController.cs</code> or similar.</p>
+<h3 id="4-get-started-in-development">4. Get started in development</h3>
+<p>GrandID requires you to receive API-keys, but to get started and try it out the experience there is a simulated environment options available that uses an in-memory implementation. Great for development and testing.</p>
+<pre><code class="lang-csharp">services
+    .AddAuthentication()
+    .AddGrandId(builder =&gt;
+    {
+        builder
+            .UseSimulatedEnvironment()
+            .AddBankIdSameDevice(options =&gt; { })
+            .AddBankIdOtherDevice(options =&gt; { });
+    });
+</code></pre>
+<p><em><strong>Note:</strong></em> Regarding ASP.NET Routes. Also make sure that you map the controller route in ASP.NET Endpoint routing, like this:</p>
+<pre><code class="lang-csharp">app.MapDefaultControllerRoute();
+</code></pre>
+<h3 id="5-use-test-or-production-environments">5. Use test or production environments</h3>
+<p>To authenticate using a real BankID you need to use the API-keys:</p>
+<pre><code class="lang-csharp">services
+    .AddAuthentication()
+    .AddGrandId(builder =&gt;
+    {
+        builder
+            .UseProductionEnvironment(config =&gt; {
+                config.ApiKey = configuration.GetValue&lt;string&gt;(&quot;ActiveLogin:GrandId:ApiKey&quot;);
+                config.BankIdServiceKey = configuration.GetValue&lt;string&gt;(&quot;ActiveLogin:GrandId:BankIdServiceKey&quot;);
+            })
+            .AddBankIdSameDevice()
+            .AddBankIdOtherDevice();
+    });
+</code></pre>
+<h2 id="samples">Samples</h2>
+<h3 id="simulated-environment">Simulated environment</h3>
+<p>For trying out quickly (without the need of keys) you can use an in-memory implementation of the API by using <code>.UseSimulatedEnvironment()</code>. This could also be good when writing tests.</p>
+<h3 id="simulated-environment-with-no-config">Simulated environment with no config</h3>
+<pre><code class="lang-csharp">services
+    .AddAuthentication()
+    .AddGrandId(builder =&gt;
+    {
+        builder
+            .UseSimulatedEnvironment()
+            .AddBankIdSameDevice(options =&gt; { })
+            .AddBankIdOtherDevice(options =&gt; { });
+    });
+</code></pre>
+<h3 id="simulated-environment-with-custom-person-info">Simulated environment with custom person info</h3>
+<p>The faked name and personal identity number can also be customized like this.</p>
+<pre><code class="lang-csharp">services
+    .AddAuthentication()
+    .AddGrandId(builder =&gt;
+    {
+        builder
+            .UseSimulatedEnvironment(&quot;Alice&quot;, &quot;Smith&quot;, &quot;199908072391&quot;)
+            .AddBankIdSameDevice(options =&gt; { })
+            .AddBankIdOtherDevice(options =&gt; { });
+    });
+</code></pre>
+<h3 id="production-environment">Production environment</h3>
+<p>This will use the real REST API for GrandID, connecting to either the Test or Production environment. It requires you to have the API keys described under <em>Preparation</em> above.</p>
+<pre><code class="lang-csharp">services.AddAuthentication()
+        .AddGrandId(builder =&gt;
+    {
+        builder
+            .UseProductionEnvironment(config =&gt; {
+                config.ApiKey = configuration.GetValue&lt;string&gt;(&quot;ActiveLogin:GrandId:ApiKey&quot;);
+            })
+            ...
+    });
+</code></pre>
+<h3 id="test-environment">Test environment</h3>
+<p>These samples uses the production environment, to use the test environment, simply swap <code>.UseProductionEnvironment()</code> with <code>.UseTestEnvironment()</code>.</p>
+<pre><code class="lang-csharp">services.AddAuthentication()
+        .AddGrandId(builder =&gt;
+    {
+        builder
+            .UseTestEnvironment(config =&gt; {
+                config.ApiKey = configuration.GetValue&lt;string&gt;(&quot;ActiveLogin:GrandId:ApiKey&quot;);
+		...
+            })
+            ...
+    });
+</code></pre>
+<h3 id="using-schemes-for-same-device-and-other-device">Using schemes for same device and other device</h3>
+<ul>
+<li><em>Same device</em>: Launches the BankID app on the same device, no need to enter any personal identity number.</li>
+<li><em>Other device</em>: You enter your personal identity number and can manually launch the app on your smartphone.</li>
+</ul>
+<pre><code class="lang-csharp">services
+    .AddAuthentication()
+    .AddGrandId(builder =&gt;
+    {
+        builder
+            .UseProductionEnvironment(config =&gt; {
+                config.ApiKey = configuration.GetValue&lt;string&gt;(&quot;ActiveLogin:GrandId:ApiKey&quot;);
+                config.BankIdServiceKey = configuration.GetValue&lt;string&gt;(&quot;ActiveLogin:GrandId:BankIdServiceKey&quot;);
+	    })
+            .AddBankIdSameDevice()
+            .AddBankIdOtherDevice();
+    });
+</code></pre>
+<h3 id="using-schemas-for-choose-device">Using schemas for choose device</h3>
+<p>This option will display a UI at GrandID where the user can choose between same or other device.</p>
+<pre><code class="lang-csharp">services
+    .AddAuthentication()
+    .AddGrandId(builder =&gt;
+    {
+        builder
+            .UseProductionEnvironment(config =&gt; {
+                config.ApiKey = configuration.GetValue&lt;string&gt;(&quot;ActiveLogin:GrandId:ApiKey&quot;);
+                config.BankIdServiceKey = configuration.GetValue&lt;string&gt;(&quot;ActiveLogin:GrandId:BankIdServiceKey&quot;);
+	    })
+            .AddBankIdChooseDevice();
+    });
+</code></pre>
+<h3 id="customizing-schemas">Customizing schemas</h3>
+<p>By default, <code>Add*Device</code> will use predefined schemas and display names, but they can be changed.</p>
+<pre><code class="lang-csharp">services
+    .AddAuthentication()
+    .AddGrandId(builder =&gt;
+    {
+        builder
+            .UseProductionEnvironment(config =&gt; {
+                config.ApiKey = configuration.GetValue&lt;string&gt;(&quot;ActiveLogin:GrandId:ApiKey&quot;);
+                config.BankIdServiceKey = configuration.GetValue&lt;string&gt;(&quot;ActiveLogin:GrandId:BankIdServiceKey&quot;);
+	    })
+            .AddBankIdSameDevice(&quot;custom-auth-scheme&quot;, &quot;Custom display name&quot;, options =&gt; { ... })
+            .AddBankIdOtherDevice(GrandIdDefaults.BankIdOtherDeviceAuthenticationScheme, &quot;Custom display name&quot;, options =&gt; { ... });
+    });
+</code></pre>
+<h3 id="customizing-grandid">Customizing GrandID</h3>
+<p>GrandId options allows you to set and override some options such as these.</p>
+<pre><code class="lang-csharp">.AddBankIdOtherDevice(options =&gt;
+{
+	// Issue birthdate claim based on data extracted from the personal identity number
+	options.IssueBirthdateClaim = true;
+
+	// Issue gender claim based on data extracted from the personal identity number
+	options.IssueGenderClaim = true;
+});
+</code></pre>
+<p>If you want to apply some options for all BankID schemes, you can do so by using <code>.ConfigureBankId(...)</code>.</p>
+<pre><code class="lang-csharp">.ConfigureBankId(options =&gt;
+{
+    options.IssueBirthdateClaim = true;
+    options.IssueGenderClaim = true;
+});
+</code></pre>
+<h3 id="api-only">Api only</h3>
+<p>We have seperated the API-wrapper into a separate package so that you can use it in other scenarios we have not covered. They look like this and are both well documented using XML-comments.</p>
+<p>The constructor for the ApiClient takes an <code>HttpClient</code> and you need to configure that <code>HttpClient</code> with a <code>BaseAddress</code>, <code>Tls12</code>, client certificates etc. depending on your needs.</p>
+<pre><code class="lang-csharp">public class GrandIdApiClient : IGrandIdApiClient
+{
+    public async Task&lt;BankIdFederatedLoginResponse&gt; BankIdFederatedLoginAsync(BankIdFederatedLoginRequest request) { ... }
+    public async Task&lt;BankIdGetSessionResponse&gt; BankIdGetSessionAsync(BankIdGetSessionRequest request) { ... }
+    public async Task&lt;LogoutResponse&gt; LogoutAsync(LogoutRequest request) { ... }
+}
+</code></pre>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/ActiveLogin/ActiveLogin.Authentication/blob/main/docs/articles/grandid.md/#L1" class="contribution-link">Improve this Doc</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            © Active Solution
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
